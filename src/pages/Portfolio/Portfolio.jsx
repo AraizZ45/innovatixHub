@@ -338,6 +338,64 @@ const appDesign = [
       desc: "Innovative Interfaces, Engaging Experiences",
     },
   ];
+const businessAdvertising = [
+    {
+      url: "#",
+      src1: "/img/project-custom/bussiness-advertising/business-advertizing-01-min.jpg",
+      src2: "/img/project-custom/bussiness-advertising/business-advertizing-02-min.jpg",
+      title: "Bussiness Advertising",
+      desc: "Driving Growth, Amplifying Succes",
+    },
+    {
+      url: "#",
+      src1: "/img/project-custom/bussiness-advertising/business-advertizing-03-min.jpg",
+      src2: "/img/project-custom/bussiness-advertising/business-advertizing-04-min.jpg",
+      title: "Bussiness Advertising",
+      desc: "Driving Growth, Amplifying Succes",
+    },
+    {
+      url: "#",
+      src1: "/img/project-custom/bussiness-advertising/business-advertizing-05-min.jpg",
+      src2: "/img/project-custom/bussiness-advertising/business-advertizing-06-min.jpg",
+      title: "Bussiness Advertising",
+      desc: "Driving Growth, Amplifying Succes",
+    },
+    {
+      url: "#",
+      src1: "/img/project-custom/bussiness-advertising/business-advertizing-07-min.jpg",
+      src2: "/img/project-custom/bussiness-advertising/business-advertizing-08-min.jpg",
+      title: "Bussiness Advertising",
+      desc: "Driving Growth, Amplifying Succes",
+    },
+    {
+      url: "#",
+      src1: "/img/project-custom/bussiness-advertising/business-advertizing-09-min.jpg",
+      src2: "/img/project-custom/bussiness-advertising/business-advertizing-10-min.jpg",
+      title: "Bussiness Advertising",
+      desc: "Driving Growth, Amplifying Succes",
+    },
+    {
+      url: "#",
+      src1: "/img/project-custom/bussiness-advertising/business-advertizing-11-min.jpg",
+      src2: "/img/project-custom/bussiness-advertising/business-advertizing-12-min.jpg",
+      title: "Bussiness Advertising",
+      desc: "Driving Growth, Amplifying Succes",
+    },
+    {
+      url: "#",
+      src1: "/img/project-custom/bussiness-advertising/business-advertizing-13-min.jpg",
+      src2: "/img/project-custom/bussiness-advertising/business-advertizing-14-min.jpg",
+      title: "Bussiness Advertising",
+      desc: "Driving Growth, Amplifying Succes",
+    },
+    {
+      url: "#",
+      src1: "/img/project-custom/bussiness-advertising/business-advertizing-15-min.jpg",
+      src2: "/img/project-custom/bussiness-advertising/business-advertizing-16-min.jpg",
+      title: "Bussiness Advertising",
+      desc: "Driving Growth, Amplifying Succes",
+    },
+  ];
 
 
 function Portfolio() {
@@ -355,7 +413,7 @@ function Portfolio() {
         <a href={"#book-design"} className='tab-btn'>Book Design</a>
         <a href={"#stationary-design"} className='tab-btn'>Stationary</a>
         <a href={"#app-design"} className='tab-btn'>App Design</a>
-        <a href={""} className='tab-btn'>Logo Design</a>
+        <a href={"#business-advertizing"} className='tab-btn'>Business Advertising</a>
         <a href={""} className='tab-btn'>Logo Design</a>
         <a href={""} className='tab-btn'>Logo Design</a>
       </div>
@@ -365,6 +423,7 @@ function Portfolio() {
       <InnerProjectArea dark={false} items={book_design} title="Book Design" id={"book-design"}/>
       <InnerProjectArea dark={true} items={stationary} title="Stationary" id={"stationary-design"}/>
       <InnerProjectArea dark={false} items={appDesign} title="App Design" id={"app-design"}/>
+      <InnerProjectArea dark={true} items={businessAdvertising} title="Business Advertising" id={"business-advertizing"}/>
       </Layout>
   )
 }
