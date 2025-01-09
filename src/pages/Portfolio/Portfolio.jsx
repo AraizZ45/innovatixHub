@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useRef, useState } from 'react'
 import Layout from '../../layouts/Layout'
 import BreadcrumbArea from '../../components/BreadcrumbArea/BreadcrumbArea'
 import InnerProjectArea from '../../components/Project/InnerProjectArea'
 import { Link } from 'react-router-dom';
+import BtnTabs from '../../components/Btn-Tabs/btn-tabs';
 
 const logo_design = [
     {
@@ -299,43 +300,43 @@ const appDesign = [
       url: "#",
       src1: "/img/project-custom/app-design/1-01.jpg",
       src2: "/img/project-custom/app-design/2-01.jpg",
-      title: "App Design",
-      desc: "Innovative Interfaces, Engaging Experiences",
+      title: "Business Card",
+      desc: "First Impressions, Lasting Impact",
     },
     {
       url: "#",
       src1: "/img/project-custom/app-design/5-01.jpg",
       src2: "/img/project-custom/app-design/4-01.jpg",
-      title: "App Design",
-      desc: "Innovative Interfaces, Engaging Experiences",
+      title: "Business Card",
+      desc: "First Impressions, Lasting Impact",
     },
     {
       url: "#",
       src1: "/img/project-custom/app-design/6-01.jpg",
       src2: "/img/project-custom/app-design/7-01.jpg",
-      title: "App Design",
-      desc: "Innovative Interfaces, Engaging Experiences",
+      title: "Business Card",
+      desc: "First Impressions, Lasting Impact",
     },
     {
       url: "#",
       src1: "/img/project-custom/app-design/8-01.jpg",
       src2: "/img/project-custom/app-design/13-01.jpg",
-      title: "App Design",
-      desc: "Innovative Interfaces, Engaging Experiences",
+      title: "Business Card",
+      desc: "First Impressions, Lasting Impact",
     },
     {
       url: "#",
       src1: "/img/project-custom/app-design/14-01.jpg",
       src2: "/img/project-custom/app-design/15-01.jpg",
-      title: "App Design",
-      desc: "Innovative Interfaces, Engaging Experiences",
+      title: "Business Card",
+      desc: "First Impressions, Lasting Impact",
     },
     {
       url: "#",
       src1: "/img/project-custom/app-design/16-01.jpg",
       src2: "/img/project-custom/app-design/13-01.jpg",
-      title: "App Design",
-      desc: "Innovative Interfaces, Engaging Experiences",
+      title: "Business Card",
+      desc: "First Impressions, Lasting Impact",
     },
   ];
 const businessAdvertising = [
@@ -396,9 +397,58 @@ const businessAdvertising = [
       desc: "Driving Growth, Amplifying Succes",
     },
   ];
-
+const businessCard = [
+    {
+      url: "#",
+      src1: "/img/project-custom/business-card/1-01.jpg",
+      src2: "/img/project-custom/business-card/2-01.jpg",
+      title: "Business Card",
+      desc: "First Impressions, Lasting Impact",
+    },
+    {
+      url: "#",
+      src1: "/img/project-custom/business-card/5-01.jpg",
+      src2: "/img/project-custom/business-card/4-01.jpg",
+      title: "Business Card",
+      desc: "First Impressions, Lasting Impact",
+    },
+    {
+      url: "#",
+      src1: "/img/project-custom/business-card/6-01.jpg",
+      src2: "/img/project-custom/business-card/7-01.jpg",
+      title: "Business Card",
+      desc: "First Impressions, Lasting Impact",
+    },
+    {
+      url: "#",
+      src1: "/img/project-custom/business-card/8-01.jpg",
+      src2: "/img/project-custom/business-card/13-01.jpg",
+      title: "Business Card",
+      desc: "First Impressions, Lasting Impact",
+    },
+    {
+      url: "#",
+      src1: "/img/project-custom/business-card/9-01.jpg",
+      src2: "/img/project-custom/business-card/12-01.jpg",
+      title: "Business Card",
+      desc: "First Impressions, Lasting Impact",
+    },
+    {
+      url: "#",
+      src1: "/img/project-custom/business-card/3-01.jpg",
+      src2: "/img/project-custom/business-card/13-01.jpg",
+      title: "Business Card",
+      desc: "First Impressions, Lasting Impact",
+    },
+  ];
 
 function Portfolio() {
+  // const []
+  const getBtn = (e) => {
+    e.preventDefault();
+    const getAttribe = e.target.getAttribute('href');
+
+  }
   return (
     <Layout header={1} footer={1} className="" mainClassName="">
       <BreadcrumbArea
@@ -406,24 +456,15 @@ function Portfolio() {
         subtitle={"Portfolio"}
         className={"pt-175 pb-140"}
       />
-      <div className="d-flex gap-2 items-center justify-content-center flex-wrap" style={{marginTop: "-70px", marginBottom: "60px"}}>
-        <a href={"#logo-design"} className='tab-btn'>Logo Design</a>
-        <a href={"#web-design"} className='tab-btn'>Web Design</a>
-        <a href={"#brand-design"} className='tab-btn'>Brand Design</a>
-        <a href={"#book-design"} className='tab-btn'>Book Design</a>
-        <a href={"#stationary-design"} className='tab-btn'>Stationary</a>
-        <a href={"#app-design"} className='tab-btn'>App Design</a>
-        <a href={"#business-advertizing"} className='tab-btn'>Business Advertising</a>
-        <a href={""} className='tab-btn'>Logo Design</a>
-        <a href={""} className='tab-btn'>Logo Design</a>
-      </div>
+        <BtnTabs getId={getBtn}/>
       <InnerProjectArea dark={true} items={logo_design} title="Logo Design" id={"logo-design"}/>
       <InnerProjectArea dark={false} items={web_design} title="Web Design" id={"web-design"}/>
       <InnerProjectArea dark={true} items={brand_design} title="Brand Design" id={"brand-design"}/>
       <InnerProjectArea dark={false} items={book_design} title="Book Design" id={"book-design"}/>
       <InnerProjectArea dark={true} items={stationary} title="Stationary" id={"stationary-design"}/>
-      <InnerProjectArea dark={false} items={appDesign} title="App Design" id={"app-design"}/>
+      <InnerProjectArea dark={false} items={appDesign} title="Business Card" id={"app-design"}/>
       <InnerProjectArea dark={true} items={businessAdvertising} title="Business Advertising" id={"business-advertizing"}/>
+      <InnerProjectArea dark={false} items={businessCard} title="Business Card" id={"business-card"}/>
       </Layout>
   )
 }

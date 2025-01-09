@@ -16,9 +16,9 @@ const AboutUs = () => {
       <BreadcrumbArea
         title="About Us"
         subtitle={"About Us"}
-        className={"pt-175 pb-140"}
+        className={"pt-175 pb-60"}
       />
-      <CounterAreaThree />
+      {/* <CounterAreaThree /> */}
       <TeamAreaTwo />
       <ConsultationAreaTwo />
       <InnerServicesArea />

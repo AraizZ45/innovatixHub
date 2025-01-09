@@ -15,6 +15,9 @@ import BlogPage from "./pages/Blog/BlogPage";
 import BlogDetailsPage from "./pages/Blog/BlogDetailsPage";
 import AnimatedCursor from "react-animated-cursor";
 import Portfolio from "./pages/Portfolio/Portfolio";
+import ServicesPage from './pages/Services/ServicePage'
+import DynamicServicesPage from "./pages/Services/DynamicServicesPage";
+import Pricing from "./pages/Pricing/pricing";
 
 function App() {
   useEffect(() => {
@@ -68,6 +71,9 @@ function App() {
         <Route path="/team-details" element={<TeamPageDetails />} />
         <Route path="/project-details" element={<PortfolioDetailsPage />} />
         <Route path="/services-details" element={<ServicesDetailsPage />} />
+        <Route path="/services" element={<ServicesPage />} />
+        <Route path="/services/:service" element={<DynamicServicesPage />} />
+        <Route path="/pricing" element={<Pricing />} />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/blog" element={<BlogPage />} />

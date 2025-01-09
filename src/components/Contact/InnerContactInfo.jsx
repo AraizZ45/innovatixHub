@@ -7,25 +7,26 @@ const InnerContactInfo = () => {
       title: "Address",
       desc: (
         <>
-          <p>UN82 Dhanmondi Dhaka - 1207</p>
+          <p>11 SKYBLUE CCT
+          YARRABILBA, QLD, 4207</p>
         </>
       ),
     },
     {
       src: "/img/icon/mail_icon03.png",
-      title: "Address",
+      title: "Email",
       desc: (
         <>
-          <a href="mailto:your@email.com">your@email.com</a>
+          <a href="mailto:info@innovatixhub.com.au">info@innovatixhub.com.au</a>
         </>
       ),
     },
     {
       src: "/img/icon/phone_icon03.png",
-      title: "Address",
+      title: "Call Us",
       desc: (
         <>
-          <a href="tel:0123456789">+12548789300</a>
+          <a href="tel:+61480008440">+61480008440</a>
         </>
       ),
     },

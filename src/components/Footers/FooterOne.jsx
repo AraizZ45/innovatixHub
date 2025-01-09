@@ -8,14 +8,14 @@ const FooterOne = () => {
         <div className="footer-top">
           <div className="container">
             <div className="row">
-              <div className="col-lg-3 col-sm-6">
+              <div className="col-lg-4 col-sm-6">
                 <div className="footer-widget">
                   <div className="logo">
                     <Link to="/">
                       <img src="/img/logo.png" alt="" />
                     </Link>
                   </div>
-                  <div className="footer-social">
+                  {/* <div className="footer-social">
                     <ul className="list-wrap">
                       <li>
                         <a href="#">
@@ -38,7 +38,7 @@ const FooterOne = () => {
                         </a>
                       </li>
                     </ul>
-                  </div>
+                  </div> */}
                   <div className="footer-contact">
                     <span>For Support</span>
                     <h2 className="title">
@@ -47,28 +47,34 @@ const FooterOne = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-3 col-sm-6">
+              <div className="col-lg-4 col-sm-6">
                 <div className="footer-widget">
-                  <h4 className="fw-title">Primary Pages</h4>
+                  <h4 className="fw-title">Navigation</h4>
                   <div className="fw-link">
                     <ul className="list-wrap">
                       <li>
                         <Link to="/">Home</Link>
                       </li>
                       <li>
-                        <Link to="/about-us">About</Link>
+                        <Link to="/about-us">About Us</Link>
                       </li>
                       <li>
-                        <Link to="/contact">Contact</Link>
+                        <Link to="/portfolio">Portfolio</Link>
                       </li>
                       <li>
-                        <Link to="/services-details">Service</Link>
+                        <Link to="/services">Service</Link>
+                      </li>
+                      <li>
+                        <Link to="/pricing">Pricing</Link>
+                      </li>
+                      <li>
+                        <Link to="/contact">Contact Us</Link>
                       </li>
                     </ul>
                   </div>
                 </div>
               </div>
-              <div className="col-lg-3 col-sm-6">
+              {/* <div className="col-lg-4 col-sm-6">
                 <div className="footer-widget">
                   <h4 className="fw-title">Pages</h4>
                   <div className="fw-link">
@@ -88,10 +94,10 @@ const FooterOne = () => {
                     </ul>
                   </div>
                 </div>
-              </div>
-              <div className="col-lg-3 col-sm-6">
+              </div> */}
+              <div className="col-lg-4 col-sm-6">
                 <div className="footer-widget">
-                  <h4 className="fw-title">About Store</h4>
+                  <h4 className="fw-title">Contact Us</h4>
                   <div className="footer-about">
                     <ul className="list-wrap">
                       <li>
@@ -116,13 +122,8 @@ const FooterOne = () => {
         <div className="footer-bottom">
           <div className="container">
             <div className="row align-items-center">
-              <div className="col-md-6">
-                <div className="cart-img">
-                  {/* <img src="/img/images/cart_img.png" alt="" /> */}
-                </div>
-              </div>
-              <div className="col-md-6">
-                <div className="copyright-text text-end">
+              <div className="col-md-12">
+              <div className="copyright-text text-center">
                   <p>© {new Date().getFullYear()} innovixhub. All Rights Reserved</p>
                 </div>
               </div>

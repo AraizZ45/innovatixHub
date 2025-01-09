@@ -4713,7 +4713,7 @@ label {
   padding: 0 70px;
 }
 .pricing-item {
-  background: var(--tg-black-two);
+  background: var(--tg-border-color-two);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 20px;
   padding: 45px 50px;
@@ -4728,7 +4728,7 @@ label {
   right: -60px;
   width: 182px;
   height: 182px;
-  background: #161620;
+  background: var(--tg-secondary-color);
   border-radius: 50%;
   display: flex;
   align-items: flex-end;
@@ -4741,33 +4741,33 @@ label {
 .pricing-top .title {
   font-size: 24px;
   margin-bottom: 24px;
-  color: var(--tg-white);
+  color: var(--tg-black-two);
 }
 .pricing-top p {
   margin-bottom: 32px;
-  color: var(--tg-silver-two);
+  color: var(--tg-black-three);
 }
 .pricing-price .price {
   display: flex;
   margin-bottom: 35px;
   font-size: 35px;
-  color: var(--tg-white);
+  color: var(--tg-black-two);
   letter-spacing: 2.15px;
   line-height: 1;
 }
 .pricing-price .price span {
   font-size: 16px;
-  color: var(--tg-silver-two);
+  color: var(--tg-black-two);
   font-weight: 400;
 }
 .pricing-price .price strong {
   font-weight: 400;
   font-size: 16px;
   margin-top: auto;
-  color: var(--tg-silver-two);
+  color: var(--tg-black-two);
 }
 .pricing-list .title {
-  color: var(--tg-white);
+  color: var(--tg-black-two);
   margin-bottom: 15px;
   font-size: 16px;
   letter-spacing: 0.145455px;
@@ -4779,8 +4779,8 @@ label {
   display: flex;
   align-items: baseline;
   font-size: 15px;
+  color: var(--tg-black-two);
   margin-bottom: 5px;
-  color: var(--tg-silver-two);
 }
 .pricing-list .list-wrap li:last-child {
   margin-bottom: 0;
@@ -4803,6 +4803,7 @@ label {
 .pricing-item.active {
   background: var(--tg-primary-color);
   border: none;
+  /* color: var(--tg-white) !important; */
   padding: 68px 50px;
 }
 .pricing-item.active .pricing-icon {
@@ -4812,6 +4813,8 @@ label {
 .pricing-item.active .pricing-top p {
   color: var(--tg-white);
 }
+
+
 .pricing-item.active .pricing-price .price strong,
 .pricing-item.active .pricing-price .price span {
   color: #deedff;
@@ -4829,21 +4832,25 @@ label {
   background: var(--tg-onyx);
   padding: 11px 14px;
   border-radius: 10px;
+  background: var(--tg-bright-gray);
 }
 .pricing-item-wrap .nav-tabs .nav-link {
   margin-bottom: 0;
   background: transparent;
   border: none;
   font-size: 16px;
+  color: var(--tg-black-three) !important;
   border-radius: 10px;
   padding: 10px 27px;
   color: var(--tg-white);
   font-weight: 400;
 }
+
 .pricing-item-wrap .nav-tabs .nav-link.active {
   box-shadow: 0px 8px 22px rgba(0, 0, 0, 0.08);
   font-weight: 700;
   background: var(--tg-primary-color);
+  color: var(--tg-bright-gray) !important;
 }
 
 /*=============================
@@ -4857,6 +4864,35 @@ label {
 }
 .work-content {
   margin-left: 72px;
+}
+
+::-webkit-scrollbar {
+  width: 5px; /* Width of the scrollbar */
+  height: 12px; /* Height for horizontal scrollbars */
+}
+
+/* Scrollbar Thumb */
+::-webkit-scrollbar-thumb {
+  background: var(--tg-secondary-color); /* Scrollbar color */
+  border-radius: 10px; /* Rounded corners */
+}
+
+/* Scrollbar Thumb on Hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Darker color on hover */
+}
+
+/* Scrollbar Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Background of the track */
+}
+
+.text-pink{
+  color: var(--tg-primary-color) !important;
+}
+.pricing-list .list-wrap{
+  height: 20rem;
+    overflow: auto;
 }
 .work-list .list-wrap li {
   display: flex;
@@ -5868,7 +5904,7 @@ label {
   max-width: 126px;
 }
 .footer-top {
-  padding: 120px 0 80px;
+  padding: 50px 0 40px;
 }
 .footer-widget {
   margin-bottom: 40px;

@@ -59,8 +59,8 @@ const InnerServicesArea = () => {
         <div className="row justify-content-center">
           <div className="col-lg-6">
             <div className="section-title title-style-two text-center mb-60">
-              <span className="sub-title">Graphic Service</span>
-              <h2 className="title">Creative & Branding Design</h2>
+              <span className="sub-title">Our Service</span>
+              <h2 className="title">Empowering Your Vision with Expert Solutions</h2>
             </div>
           </div>
         </div>

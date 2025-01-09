@@ -1,6 +1,6 @@
 import React from "react";
 
-const ServicesDetailsArea = () => {
+const ServicesDetailsArea = ({para}) => {
   return (
     <div className="services-details-area">
       <div className="container">
@@ -12,11 +12,7 @@ const ServicesDetailsArea = () => {
 
             <div className="services-details-content text-center">
               <p>
-                Lorem ipsum dolor sit amet, sed nulla ante amet, elementum
-                tincidunt arcu sed laoreet, natoque ac eget imperdiet. Ac
-                scelerisque nibh dolores consectetuer, nulla aptent est pede.
-                Scelerisque euismod varius mi, congue eget sed vestibulum,
-                ornare cras sed nec.
+                {para}
               </p>
             </div>
           </div>
