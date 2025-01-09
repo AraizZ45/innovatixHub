@@ -22,6 +22,12 @@ object-assign
    */
 
 /*!
+  * Bootstrap v5.2.3 (https://getbootstrap.com/)
+  * Copyright 2011-2022 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
+  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+  */
+
+/*!
  * jQuery JavaScript Library v3.6.3
  * https://jquery.com/
  *
@@ -34,8 +40,6 @@ object-assign
  *
  * Date: 2022-12-20T21:28Z
  */
-
-/*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */
 
 /**
  * @license React
